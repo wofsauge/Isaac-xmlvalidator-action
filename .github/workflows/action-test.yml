@@ -9,6 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          ref: 'test-data' #checkout specific branch
       - uses: wofsauge/Isaac-xmlvalidator-action@main
         with:
-          who-to-greet: 'Mona the Octocat'
+          root-folder: 'testFiles'

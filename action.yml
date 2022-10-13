@@ -1,13 +1,10 @@
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: 'Isaac XML File validator'
+description: 'Checks the validity of all .xml files inside your mod files for both syntax and usage errors.'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  root-folder:  # id of input
+    description: 'Folder where the tool should search for .xml files'
     required: true
-    default: 'World'
-outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+    default: ''
 runs:
   using: 'node16'
   main: 'index.js'

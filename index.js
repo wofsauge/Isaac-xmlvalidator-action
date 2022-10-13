@@ -1,15 +1,20 @@
 const core = require('@actions/core');
-const github = require('@actions/github');
+const glob = require('@actions/glob');
 
 try {
-  // `who-to-greet` input defined in action metadata file
-  const nameToGreet = core.getInput('who-to-greet');
-  console.log(`Hello ${nameToGreet}!`);
-  const time = (new Date()).toTimeString();
-  core.setOutput("time", time);
-  // Get the JSON webhook payload for the event that triggered the workflow
-  const payload = JSON.stringify(github.context.payload, undefined, 2)
-  console.log(`The event payload: ${payload}`);
+  const rootFolder = core.getInput('root-folder');
+  if (!rootFolder) {
+    console.log(`No Root folder provided. Using whole repository.`);
+    rootFolder = "**"
+  }else{
+    console.log(`Root folder provided: ${rootFolder}!`);
+  }
+  
+  const globber = await glob.create(rootFolder+'/.xml')
+  for await (const file of globber.globGenerator()) {
+    console.log(file)
+  }
+
 } catch (error) {
   core.setFailed(error.message);
 }
