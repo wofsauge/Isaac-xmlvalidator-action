@@ -1,6 +1,13 @@
 const core = require('@actions/core');
 const glob = require('@actions/glob');
 
+async function handleFiles() {
+  const globber = await glob.create(rootFolder+'/.xml')
+  for await (const file of globber.globGenerator()) {
+    console.log(file);
+  }
+}
+
 try {
   const rootFolder = core.getInput('root-folder');
   if (!rootFolder) {
@@ -9,11 +16,8 @@ try {
   }else{
     console.log(`Root folder provided: ${rootFolder}!`);
   }
-  
-  const globber = glob.create(rootFolder+'/.xml')
-  for (const file of globber.globGenerator()) {
-    console.log(file)
-  }
+
+  handleFiles();
 
 } catch (error) {
   core.setFailed(error.message);
