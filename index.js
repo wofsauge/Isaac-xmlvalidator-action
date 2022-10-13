@@ -1,5 +1,6 @@
 const core = require('@actions/core');
 const glob = require('@actions/glob');
+const glob = require('xmllint.js');
 
 async function handleFiles() {
   const rootFolder = core.getInput('root-folder');
@@ -11,9 +12,12 @@ async function handleFiles() {
   }
 
   const globber = await glob.create(rootFolder+'/.xml')
-  for await (const file of globber.globGenerator()) {
+  const files = await globber.glob();
+  console.log(`Found `+files.length+` files inside root folder: ${rootFolder}`);
+
+  files.forEach(file => {
     console.log(file);
-  }
+  });
 }
 
 try {
