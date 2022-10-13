@@ -19,7 +19,8 @@
   "homepage": "https://github.com/actions/hello-world-javascript-action#readme",
   "dependencies": {
     "@actions/core": "^1.6.0",
-    "@actions/glob": "^0.3.0"
-  },
-  "devDependencies": {}
+    "@actions/glob": "^0.3.0",
+    "jsdom": "^20.0.1",
+    "xmllint": "^0.1.1"
+  }
 }
