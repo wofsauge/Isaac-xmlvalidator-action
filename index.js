@@ -11,7 +11,7 @@ try {
   }
   
   const globber = glob.create(rootFolder+'/.xml')
-  for await (const file of globber.globGenerator()) {
+  for (const file of globber.globGenerator()) {
     console.log(file)
   }
 
