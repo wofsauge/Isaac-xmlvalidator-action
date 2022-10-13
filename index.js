@@ -10,7 +10,7 @@ try {
     console.log(`Root folder provided: ${rootFolder}!`);
   }
   
-  const globber = await glob.create(rootFolder+'/.xml')
+  const globber = glob.create(rootFolder+'/.xml')
   for await (const file of globber.globGenerator()) {
     console.log(file)
   }

@@ -20,5 +20,6 @@
   "dependencies": {
     "@actions/core": "^1.6.0",
     "@actions/glob": "^0.3.0"
-  }
+  },
+  "devDependencies": {}
 }
