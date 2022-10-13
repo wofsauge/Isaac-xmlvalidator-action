@@ -1,6 +1,6 @@
 const core = require('@actions/core');
 const glob = require('@actions/glob');
-const glob = require('xmllint.js');
+const xmllint = require('xmllint.js');
 
 async function handleFiles() {
   const rootFolder = core.getInput('root-folder');
