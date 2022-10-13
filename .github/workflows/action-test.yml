@@ -1,0 +1,14 @@
+# This workflow will run a test of the action
+name: Action test
+
+on:
+ - push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: wofsauge/Isaac-xmlvalidator-action@main
+        with:
+          who-to-greet: 'Mona the Octocat'
