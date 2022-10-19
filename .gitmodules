@@ -1,0 +1,3 @@
+[submodule "Isaac-XML-Validator"]
+	path = Isaac-XML-Validator
+	url = https://github.com/wofsauge/Isaac-XML-Validator.git
