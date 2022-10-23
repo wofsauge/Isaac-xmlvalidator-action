@@ -35,7 +35,7 @@ def main():
             errors = validator(file)
 
             for err in errors:
-                res = [ele for ele in errorIgnoreList if(ele in str(err))]
+                res = [ele for ele in errorIgnoreList if (ele in str(err))]
                 if not res:
                     errCount += 1
                     print(err)
@@ -44,11 +44,10 @@ def main():
             errCount += 1
             print(err)
             print("SYNTAX ERROR DETECTED!!")
-            #do nothing
 
         if errCount > 0:
             print("---- End errors for file: " + file)
-            
+
         totalErrorCount += errCount
     print("~~~~~ Finished analysing " + str(len(files)) + " files! ~~~~~")
     print("Found: " + str(totalErrorCount) + " Errors")
