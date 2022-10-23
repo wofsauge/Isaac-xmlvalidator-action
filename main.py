@@ -42,6 +42,7 @@ def main():
 
         except Exception as err:
             errCount += 1
+            print(err)
             print("SYNTAX ERROR DETECTED!!")
             #do nothing
 
