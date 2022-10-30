@@ -6,7 +6,7 @@ RUN apk add --update --no-cache g++ gcc libxslt-dev && \
     pip --no-cache-dir install lxml
 # We are installing a dependency here directly into our app source dir
 RUN pip install --target=/app requests
-RUN pip install --target=/app --no-binary lxml
+RUN pip install --target=/app lxml
 
 # A distroless container image with Python and some basics like SSL certificates
 # https://github.com/GoogleContainerTools/distroless
