@@ -10,7 +10,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          ref: 'test-data' #checkout specific branch
           submodules: recursive
       - uses: wofsauge/Isaac-xmlvalidator-action@main
         with:
