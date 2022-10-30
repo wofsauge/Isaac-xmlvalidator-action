@@ -1,14 +1,15 @@
 import os
 import glob
-from xsd_validator import XsdValidator
+from lxml import etree
 
 
 fileIgnoreList = ["seedmenu.xml", "fxlayers.xml"]
-errorIgnoreList = [
-    "cvc-pattern-valid: Value '' is not facet-valid",
-    "The value '' of attribute",
-]
 
+def clearIsaacRefsRecursive(node):
+    for child in node.getchildren():
+        if child.get("type") is not None:
+            child.set("type",child.get("type").replace("xsisaac:",""))
+        clearIsaacRefsRecursive(child)
 
 def main():
     rootFolder = "**"
@@ -20,33 +21,41 @@ def main():
 
     totalErrorCount = 0
     files = glob.glob(rootFolder + "/**.xml")
-    for file in files:
-        filteredFilename = file.split("\\")[len(file.split("\\")) - 1]
+    for filename in files:
+        filteredFilename = filename.split("\\")[len(filename.split("\\")) - 1]
         if filteredFilename in fileIgnoreList:
             continue
 
-        print("Now analysing: " + file)
+        print("Now analysing: " + filename)
 
         errCount = 0
         try:
-            validator = XsdValidator(
-                "Isaac-XML-Validator/xsd/" + filteredFilename.replace(".xml", ".xsd")
-            )
-            errors = validator(file)
+            xmlschema_root_doc = etree.parse("Isaac-XML-Validator/isaacTypes.xsd")
+            xmlschema_doc = etree.parse("Isaac-XML-Validator/xsd/" + filteredFilename.replace(".xml", ".xsd"))
 
-            for err in errors:
-                res = [ele for ele in errorIgnoreList if (ele in str(err))]
-                if not res:
-                    errCount += 1
-                    print(err)
+            #Replace import node with content of the imported file, because lxml doesnt like https links 
+            node = xmlschema_doc.getroot().find("{http://www.w3.org/2001/XMLSchema}import")
+            if node is not None:
+                for child in xmlschema_root_doc.getroot().getchildren():
+                    xmlschema_doc.getroot().insert(0,child)
+                xmlschema_doc.getroot().remove(node)
+            clearIsaacRefsRecursive(xmlschema_doc.getroot())
+            xmlschema = etree.XMLSchema(xmlschema_doc)
 
+            xml_doc = etree.parse(filename)
+            isValid = xmlschema.validate(xml_doc)
+            if not isValid:
+                for error in xmlschema.error_log:
+                    print(error.filename+":line "+str(error.line)+":col "+str(error.column)+": "+error.message)
+            else:
+                print("File is valid")
         except Exception as err:
-            errCount += 1
             print(err)
+            errCount += 1
             print("SYNTAX ERROR DETECTED!!")
 
         if errCount > 0:
-            print("---- End errors for file: " + file)
+            print("---- End errors for file: " + filename)
 
         totalErrorCount += errCount
     print("~~~~~ Finished analysing " + str(len(files)) + " files! ~~~~~")
