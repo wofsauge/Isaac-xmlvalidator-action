@@ -1,6 +1,7 @@
 import os
 import glob
 import lxml
+import xml.etree.ElementTree as ET
 
 
 fileIgnoreList = ["seedmenu.xml", "fxlayers.xml"]
@@ -30,8 +31,8 @@ def main():
 
         errCount = 0
         try:
-            xmlschema_root_doc = lxml.etree.parse("Isaac-XML-Validator/isaacTypes.xsd")
-            xmlschema_doc = lxml.etree.parse("Isaac-XML-Validator/xsd/" + filteredFilename.replace(".xml", ".xsd"))
+            xmlschema_root_doc = ET.parse("Isaac-XML-Validator/isaacTypes.xsd")
+            xmlschema_doc = ET.parse("Isaac-XML-Validator/xsd/" + filteredFilename.replace(".xml", ".xsd"))
 
             #Replace import node with content of the imported file, because lxml doesnt like https links 
             node = xmlschema_doc.getroot().find("{http://www.w3.org/2001/XMLSchema}import")
@@ -40,9 +41,9 @@ def main():
                     xmlschema_doc.getroot().insert(0,child)
                 xmlschema_doc.getroot().remove(node)
             clearIsaacRefsRecursive(xmlschema_doc.getroot())
-            xmlschema = lxml.etree.XMLSchema(xmlschema_doc)
+            xmlschema = ET.XMLSchema(xmlschema_doc)
 
-            xml_doc = lxml.etree.parse(filename)
+            xml_doc = ET.parse(filename)
             isValid = xmlschema.validate(xml_doc)
             if not isValid:
                 for error in xmlschema.error_log:
