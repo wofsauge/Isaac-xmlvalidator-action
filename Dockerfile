@@ -13,8 +13,9 @@ RUN apt-get update && \
 
 # Setup JAVA_HOME -- useful for docker commandline
 ENV JAVA_HOME /usr/lib/jvm/java-11-openjdk-amd64/
-ENV PATH /usr/lib/jvm/java-11-openjdk-amd64/
 RUN export JAVA_HOME
+
+ENV PATH="${PATH}:/usr/lib/jvm/java-11-openjdk-amd64/"
 
 # A distroless container image with Python and some basics like SSL certificates
 # https://github.com/GoogleContainerTools/distroless
