@@ -2,7 +2,7 @@ FROM python:3-slim AS builder
 ADD . /app
 WORKDIR /app
 
-RUN apt-get install -y python3-lxml
+RUN apt-get install python-lxml
 # We are installing a dependency here directly into our app source dir
 RUN pip install --target=/app requests
 RUN pip install --target=/app lxml
