@@ -12,10 +12,6 @@ jobs:
         with:
           ref: 'test-data' #checkout specific branch
           submodules: recursive
-      - uses: actions/setup-java@v3
-        with:
-          distribution: 'corretto' # See 'Supported distributions' for available options
-          java-version: '17'
       - uses: wofsauge/Isaac-xmlvalidator-action@main
         with:
           rootFolder: 'vanillaFiles'
