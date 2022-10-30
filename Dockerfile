@@ -8,8 +8,6 @@ RUN apk add --update --no-cache g++ gcc libxslt-dev && \
 RUN pip install --target=/app requests
 RUN pip install --target=/app lxml
 
-COPY --from=builder /app /app
-WORKDIR /app
 ENV PYTHONPATH /app
 
 CMD ["/app/main.py"]
