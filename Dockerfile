@@ -1,11 +1,12 @@
+FROM ubuntu
+RUN apt-get install -y python3-lxml
+
 FROM python:3-slim AS builder
 ADD . /app
 WORKDIR /app
-
 # We are installing a dependency here directly into our app source dir
 RUN pip install --target=/app requests
 RUN pip install --target=/app lxml
-RUN sudo apt-get install python3-lxml
 
 # A distroless container image with Python and some basics like SSL certificates
 # https://github.com/GoogleContainerTools/distroless
