@@ -6,17 +6,20 @@ WORKDIR /app
 RUN pip install --target=/app requests
 RUN pip install --target=/app xsd-validator
 
-# Install OpenJDK-11
-RUN apt-get update && \
-    apt-get install -y openjdk-11-jre-headless && \
-    apt-get clean;
+# A Java 8 runtime example
+# The official Red Hat registry and the base image
+FROM registry.access.redhat.com/rhel7-minimal
+USER root
+# Install Java runtime
+RUN microdnf --enablerepo=rhel-7-server-rpms \
+install java-1.8.0-openjdk --nodocs ;\
+microdnf clean all
+# Set the JAVA_HOME variable to make it clear where Java is located
+ENV JAVA_HOME /etc/alternatives/jre
+ENV PATH="${PATH}:/etc/alternatives/jre"
 
-# Setup JAVA_HOME -- useful for docker commandline
-ENV JAVA_HOME /usr/lib/jvm/java-11-openjdk-amd64/
-RUN export JAVA_HOME
-
-ENV PATH="${PATH}:/usr/lib/jvm/java-11-openjdk-amd64/"
-
+# Finally, run the script
+CMD [ "/app/run-java.sh" ]
 # A distroless container image with Python and some basics like SSL certificates
 # https://github.com/GoogleContainerTools/distroless
 FROM gcr.io/distroless/python3-debian10
