@@ -1,23 +1,23 @@
-# Hello world JavaScript action
+# Isaac XML File validator
 
-This action prints "Hello World" or "Hello" + the name of a person to greet to the log. To learn how this action was built, see "[Creating a JavaScript action](https://help.github.com/en/articles/creating-a-javascript-action)" in the GitHub Help documentation.
+Checks the validity of all .xml files inside your mod files for both syntax and usage errors.
 
 ## Inputs
 
-### `who-to-greet`
+### `rootFolder`
 
-**Required** The name of the person to greet. Default `"World"`.
+**Required** Folder where the tool should search for .xml files. *Default* `"**"`.
+### `recursive`
 
-## Outputs
+Should .xml files be searched recursively in the directory. *Default* `true`.
+### `expectedErrorCount`
 
-### `time`
-
-The time we greeted you.
+Number of validation errors that are expected to occur. good for debugging. *Default* `0`.
 
 ## Example usage
 
 ```yaml
-uses: actions/hello-world-javascript-action@main
+uses: wofsauge/Isaac-xmlvalidator-action@main
 with:
-  who-to-greet: 'Mona the Octocat'
+  rootFolder: 'content'
 ```

@@ -2,10 +2,18 @@ name: 'Isaac XML File validator'
 description: 'Checks the validity of all .xml files inside your mod files for both syntax and usage errors.'
 author: "Wofsauge"
 inputs:
-  rootFolder:  # id of input
+  rootFolder:
     description: 'Folder where the tool should search for .xml files'
     required: true
     default: '**'
+  recursive:
+    description: 'Should .xml files be searched recursively in the directory'
+    required: false
+    default: true
+  expectedErrorCount:
+    description: 'Number of validation errors that are expected to occur'
+    required: false
+    default: 0
 runs:
   using: "docker"
   image: "Dockerfile"
