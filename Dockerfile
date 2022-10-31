@@ -10,4 +10,4 @@ RUN pip install --target=/app lxml
 
 ENV PYTHONPATH /app
 
-CMD ["/app/main.py"]
+CMD  [ "python", "/app/main.py"]
