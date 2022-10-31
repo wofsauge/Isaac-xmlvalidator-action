@@ -133,7 +133,8 @@ def main():
     else:
         printOK("No errors found")
 
-    sys.exit(totalErrorCount != expectedErrorCount)
+    if totalErrorCount != expectedErrorCount:
+        sys.exit(1)
 
 
 
@@ -145,7 +146,7 @@ def readGithubEnvVars():
     else:
         rootFolder = "**"
     print("\tRoot folder: ", rootFolder)
-    
+
     if "INPUT_RECURSIVE" in os.environ:
         recursive = os.environ["INPUT_RECURSIVE"]
     else:
