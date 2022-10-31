@@ -13,4 +13,9 @@ jobs:
           submodules: recursive
       - uses: wofsauge/Isaac-xmlvalidator-action@main
         with:
-          rootFolder: 'vanillaFiles'
+          rootFolder: 'testFiles/vanillaFiles'
+      - uses: wofsauge/Isaac-xmlvalidator-action@main
+        with:
+          rootFolder: 'testFiles/errorTestFiles'
+          recursive: false
+          expectedErrorCount: 5
