@@ -71,6 +71,7 @@ def printWarn(string):
 def main():
     totalErrorCount = 0
     files = glob.glob(rootFolder + "/**.xml", recursive=recursive)
+    print("Found "+str(len(files))+ " files in path: "+rootFolder + "/**.xml")
     for filename in files:
         filteredFilename = filename.split("\\")[len(filename.split("\\")) - 1]
         filteredFilename = filteredFilename.split("/")[
@@ -140,9 +141,7 @@ def readGithubEnvVars():
     print("Evaluate settings:")
     if "INPUT_ROOTFOLDER" in os.environ:
         rootFolder = os.environ["INPUT_ROOTFOLDER"]
-        print("\tRoot folder provided: ", rootFolder)
-    else:
-        print("\tNo Root folder provided. Using whole repository.")
+        print("\tRoot folder: ", rootFolder)
 
     if "INPUT_RECURSIVE" in os.environ:
         recursive = os.environ["INPUT_RECURSIVE"]
@@ -150,7 +149,7 @@ def readGithubEnvVars():
 
     if "INPUT_EXPECTEDERRORCOUNT" in os.environ:
         expectedErrorCount = os.environ["INPUT_EXPECTEDERRORCOUNT"]
-        print("\Expected Error Count: ", expectedErrorCount)
+        print("\tExpected Error Count: ", expectedErrorCount)
 
 if __name__ == "__main__":
     readGithubEnvVars()
