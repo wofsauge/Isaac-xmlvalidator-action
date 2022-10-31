@@ -1,5 +1,5 @@
 name: 'Isaac XML File validator'
-description: 'Checks the validity of all .xml files inside your mod files for both syntax and usage errors.'
+description: 'Checks the validity of all .xml files inside your Binding of Isaac mod files for both syntax and usage errors.'
 author: "Wofsauge"
 branding:
   icon: 'check'
