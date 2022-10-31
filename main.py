@@ -4,11 +4,6 @@ import glob
 import lxml
 import lxml.etree
 
-# Default values
-rootFolder = "**"
-expectedErrorCount = 0
-recursive = True
-
 class bcolors:
     HEADER = "\033[95m"
     OKBLUE = "\033[94m"
@@ -20,6 +15,9 @@ class bcolors:
     BOLD = "\033[1m"
     UNDERLINE = "\033[4m"
 
+
+# Default values
+global rootFolder, expectedErrorCount, recursive
 
 fileAllowList = [
     "bossportraits.xml",
@@ -69,6 +67,8 @@ def printWarn(string):
     print(bcolors.WARNING + str(string) + bcolors.ENDC)
 
 def main():
+    global rootFolder, expectedErrorCount, recursive
+
     totalErrorCount = 0
     files = glob.glob(rootFolder + "/**.xml", recursive=recursive)
     print("Found "+str(len(files))+ " files in path: "+rootFolder + "/**.xml")
@@ -138,18 +138,25 @@ def main():
 
 
 def readGithubEnvVars():
+    global rootFolder, expectedErrorCount, recursive
     print("Evaluate settings:")
     if "INPUT_ROOTFOLDER" in os.environ:
         rootFolder = os.environ["INPUT_ROOTFOLDER"]
-        print("\tRoot folder: ", rootFolder)
-
+    else:
+        rootFolder = "**"
+    print("\tRoot folder: ", rootFolder)
+    
     if "INPUT_RECURSIVE" in os.environ:
         recursive = os.environ["INPUT_RECURSIVE"]
-        print("\tRecursive: ", recursive)
+    else:
+        recursive = True
+    print("\tRecursive: ", recursive)
 
     if "INPUT_EXPECTEDERRORCOUNT" in os.environ:
         expectedErrorCount = os.environ["INPUT_EXPECTEDERRORCOUNT"]
-        print("\tExpected Error Count: ", expectedErrorCount)
+    else:
+        expectedErrorCount = 0
+    print("\tExpected Error Count: ", expectedErrorCount)
 
 if __name__ == "__main__":
     readGithubEnvVars()
