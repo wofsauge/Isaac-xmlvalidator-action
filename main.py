@@ -130,11 +130,12 @@ def main():
     print("~~~~~ Finished analysing " + str(len(files)) + " files! ~~~~~")
     if totalErrorCount > 0:
         printErr("Found: " + str(totalErrorCount) + " Errors")
+        if int(totalErrorCount) != int(expectedErrorCount):
+            printErr("Expected error count was not reached!")
+            sys.exit(1)
     else:
         printOK("No errors found")
 
-    if totalErrorCount != expectedErrorCount:
-        sys.exit(1)
 
 
 
@@ -156,7 +157,7 @@ def readGithubEnvVars():
     if "INPUT_EXPECTEDERRORCOUNT" in os.environ:
         expectedErrorCount = os.environ["INPUT_EXPECTEDERRORCOUNT"]
     else:
-        expectedErrorCount = 0
+        expectedErrorCount = 65
     print("\tExpected Error Count: ", expectedErrorCount)
 
 if __name__ == "__main__":
