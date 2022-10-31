@@ -39,11 +39,11 @@ def main():
         print("Root folder provided: ", rootFolder)
     else:
         print("No Root folder provided. Using whole repository.")
-
     totalErrorCount = 0
     files = glob.glob(rootFolder + "/**.xml")
     for filename in files:
         filteredFilename = filename.split("\\")[len(filename.split("\\")) - 1]
+        filteredFilename = filteredFilename.split("/")[len(filteredFilename.split("/")) - 1]
         if filteredFilename in fileIgnoreList:
             continue
 
