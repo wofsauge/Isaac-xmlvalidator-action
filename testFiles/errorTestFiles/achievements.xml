@@ -1,0 +1,8 @@
+<achievements gfxroot="gfx/ui/achievement/">
+	<!-- no gfx file-type-ending -->
+	<achievement id="1" text='You unlocked "Magdalene"' gfx="Achievement_Magdalene" />
+	<!-- non existant attribute -->
+	<achievement id="2" tesxt='You unlocked "Cain"' gfx="Achievement_Cain.png" />
+	<!-- non existant element -->
+	<achievesment id="3" text='You unlocked "Judas"' gfx="Achievement_Judas.png" />
+</achievements>
