@@ -19,6 +19,8 @@ class bcolors:
 # Default values
 global rootFolder, expectedErrorCount, recursive
 
+print(os.path.realpath(__file__))
+
 fileAllowList = [
     "bossportraits.xml",
     "entities2.xml",
