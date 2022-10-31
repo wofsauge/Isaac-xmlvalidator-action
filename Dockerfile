@@ -1,11 +1,13 @@
 FROM python:3-alpine AS builder
 ADD . /app
-WORKDIR /app
 
 #Install git
 RUN apk add git
+
 RUN git clone https://github.com/wofsauge/Isaac-XML-Validator.git
 
+# main workdir
+WORKDIR /app
 
 RUN apk add --update --no-cache g++ gcc libxslt-dev && \
     pip --no-cache-dir install lxml
