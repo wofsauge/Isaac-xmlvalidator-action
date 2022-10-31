@@ -19,7 +19,6 @@ class bcolors:
 # Default values
 global rootFolder, expectedErrorCount, recursive
 
-print(os.path.realpath(__file__))
 
 fileAllowList = [
     "bossportraits.xml",
@@ -70,6 +69,7 @@ def printWarn(string):
 
 def main():
     global rootFolder, expectedErrorCount, recursive
+    scriptPath =os.path.realpath(__file__).replace("main.py","")
 
     totalErrorCount = 0
     files = glob.glob(rootFolder + "/**.xml", recursive=recursive)
@@ -86,9 +86,9 @@ def main():
 
         errCount = 0
         try:
-            xmlschema_root_doc = lxml.etree.parse("Isaac-XML-Validator/isaacTypes.xsd")
+            xmlschema_root_doc = lxml.etree.parse(scriptPath+"Isaac-XML-Validator/isaacTypes.xsd")
             xmlschema_doc = lxml.etree.parse(
-                "Isaac-XML-Validator/xsd/" + filteredFilename.replace(".xml", ".xsd")
+                scriptPath+"Isaac-XML-Validator/xsd/" + filteredFilename.replace(".xml", ".xsd")
             )
 
             # Replace import node with content of the imported file, because lxml doesnt like https links
