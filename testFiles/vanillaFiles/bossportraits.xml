@@ -63,8 +63,8 @@
 	<boss id="61" name="Rag Man" nameimage="BossName_405.0_RagMan.png" portrait="Portrait_405.0_Ragman.png" pivotX="96" pivotY="152" achievement="346" />
 	<boss id="62" name="Ultra Greed" nameimage="BossName_406.0_UltraGreed.png" portrait="Portrait_406.0_UltraGreed.png" pivotX="86" pivotY="152" />
 	<boss id="63" name="Hush" nameimage="BossName_407.0_Hush.png" portrait="Portrait_407.0_Hush.png" pivotX="96" pivotY="132" />
-	<boss id="64" name="Dangle" nameimage="BossName_Dangle.png" portrait="Portrait_Dangle.png" pivotX="96" pivotY="132" />
-	<boss id="65" name="Turdling" nameimage="BossName_Turdlings.png" portrait="Portrait_Turdlings.png" pivotX="96" pivotY="144" />
+	<boss id="64" name="Dangle" nameimage="BossName_Dangle.png" portrait="Portrait_Dangle.png" pivotX="96" pivotY="132" achievement="346" />
+	<boss id="65" name="Turdling" nameimage="BossName_Turdlings.png" portrait="Portrait_Turdlings.png" pivotX="96" pivotY="144" achievement="346" />
 	<boss id="66" name="The Frail" nameimage="BossName_TheFrail.png" portrait="Portrait_TheFrail.png" pivotX="96" pivotY="132" achievement="346" />
 	
 	<boss id="67" name="Rag Mega" nameimage="BossName_RagMega.png" portrait="Portrait_RagMega.png" pivotX="86" pivotY="160" achievement="347" />
@@ -75,8 +75,8 @@
 	<boss id="72" name="The Matriarch" nameimage="BossName_Matriarch.png" portrait="Portrait_Matriarch.png" pivotX="86" pivotY="160" achievement="347" />
 	
 <!-- REPENTANCE BEGIN -->
-	<boss id="73" name="The Pile" nameimage="BossName_Polycephalus2.png" portrait="Portrait_269.1_Polycephalus2.png" pivotX="84" pivotY="144" />
-	<boss id="74" name="Reap Creep" nameimage="BossName_ReapCreep.png" portrait="Portrait_900.0_ReapCreep.png" pivotX="96" pivotY="142" />
+	<boss id="73" name="The Pile" nameimage="BossName_Polycephalus2.png" portrait="Portrait_269.1_Polycephalus2.png" pivotX="84" pivotY="144" achievement="347" />
+	<boss id="74" name="Reap Creep" nameimage="BossName_ReapCreep.png" portrait="Portrait_900.0_ReapCreep.png" pivotX="96" pivotY="142" achievement="347" />
 	<boss id="75" name="Beelzeblub" nameimage="BossName_Beelzeblub.png" portrait="Portrait_901.0_Beelzeblub.png" pivotX="84" pivotY="144">
 		<alt stage="28" portrait="Portrait_901.0_Beelzeblub_Dross.png" />
 	</boss>
@@ -90,7 +90,7 @@
 	<boss id="81" name="The Heretic" nameimage="BossName_Heretic.png" portrait="Portrait_905.0_Heretic.png" pivotX="84" pivotY="144" />
 	<boss id="82" name="Hornfel" nameimage="BossName_Hornfel.png" portrait="Portrait_906.0_Hornfel.png" pivotX="72" pivotY="144" />
 	<boss id="83" name="Great Gideon" nameimage="BossName_Gideon.png" portrait="Portrait_907.0_Gideon.png" pivotX="84" pivotY="144" />
-	<boss id="84" name="Baby Plum" nameimage="BossName_BabyPlum.png" portrait="Portrait_908.0_BabyPlum.png" pivotX="84" pivotY="144" />
+	<boss id="84" name="Baby Plum" nameimage="BossName_BabyPlum.png" portrait="Portrait_908.0_BabyPlum.png" pivotX="84" pivotY="144" achievement="347" />
 	<boss id="85" name="The Scourge" nameimage="BossName_Scourge.png" portrait="Portrait_909.0_Scourge.png" pivotX="84" pivotY="144" />
 	<boss id="86" name="Chimera" nameimage="BossName_Chimera.png" portrait="Portrait_910.0_Chimera.png" pivotX="84" pivotY="144" />
 	<boss id="87" name="Rotgut" nameimage="BossName_Rotgut.png" portrait="Portrait_911.0_Rotgut.png" pivotX="84" pivotY="144" />
@@ -100,7 +100,7 @@
 	<boss id="91" name="Min-Min" nameimage="BossName_MinMin.png" portrait="Portrait_MinMin.png" pivotX="84" pivotY="144" />
 	<boss id="92" name="Clog" nameimage="BossName_Clog.png" portrait="Portrait_Clog.png" pivotX="84" pivotY="144" />
 	<boss id="93" name="Singe" nameimage="BossName_Singe.png" portrait="Portrait_Singe.png" pivotX="84" pivotY="158" />
-	<boss id="94" name="Bumbino" nameimage="BossName_Bumbino.png" portrait="Portrait_Bumbino.png" pivotX="84" pivotY="144" />
+	<boss id="94" name="Bumbino" nameimage="BossName_Bumbino.png" portrait="Portrait_Bumbino.png" pivotX="84" pivotY="144" achievement="347" />
 	<boss id="95" name="Colostomia" nameimage="BossName_Colostomia.png" portrait="Portrait_Colostomia.png" pivotX="84" pivotY="158" />
 	<boss id="96" name="The Shell" nameimage="BossName_Shell.png" portrait="Portrait_Shell.png" pivotX="84" pivotY="158" />
 	<boss id="97" name="Turdlet" nameimage="BossName_Turdlet.png" portrait="Portrait_Turdlet.png" pivotX="84" pivotY="140" />

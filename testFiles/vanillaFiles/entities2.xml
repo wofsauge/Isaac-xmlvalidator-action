@@ -413,7 +413,7 @@
     <entity anm2path="003.105_Depression.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="13" friction="1" id="3" name="Depression" numGridCollisionPoints="12" shadowSize="11" stageHP="0" variant="105">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/>
     </entity>
-    <entity anm2path="003.106_Shade.anm2" baseHP="0" boss="0" champion="0" collisionDamage="2" collisionInterval="2" collisionMass="3" collisionRadius="13" friction="1" id="3" name="Shade" numGridCollisionPoints="12" shadowSize="11" stageHP="0" variant="106">
+    <entity anm2path="003.106_Shade.anm2" baseHP="0" boss="0" champion="0" collisionDamage="5" collisionInterval="2" collisionMass="3" collisionRadius="13" friction="1" id="3" name="Shade" numGridCollisionPoints="12" shadowSize="11" stageHP="0" variant="106">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/>
     </entity>
     <entity anm2path="003.107_Hushy.anm2" baseHP="0" boss="0" champion="0" collisionDamage="2" collisionInterval="2" collisionMass="3" collisionRadius="13" friction="1" id="3" name="Hushy" numGridCollisionPoints="12" shadowSize="11" stageHP="0" tags="cansacrifice" variant="107">
@@ -495,6 +495,9 @@
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/>
     </entity>
     <entity anm2path="003.130_Jaw Bone.anm2" baseHP="0" boss="0" champion="0" collisionDamage="7" collisionInterval="7" collisionMass="3" collisionRadius="13" friction="1" id="3" name="Jaw Bone" numGridCollisionPoints="12" shadowSize="11" stageHP="0" variant="130">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/>
+    </entity>
+    <entity anm2path="003.131_My Shadow.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionInterval="2" collisionMass="3" collisionRadius="13" friction="1" id="3" name="My Shadow" numGridCollisionPoints="12" shadowSize="0" stageHP="0" variant="131">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/>
     </entity>
     <entity anm2path="003.900_Forgotten Body.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="18" friction="1" id="3" name="Forgotten Body" numGridCollisionPoints="12" shadowSize="16" stageHP="0" variant="900">
@@ -655,7 +658,7 @@
     <entity anm2path="005.051_BombChest.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="Bomb Chest" numGridCollisionPoints="24" shadowSize="28" stageHP="0" variant="51">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/>
     </entity>
-    <entity anm2path="005.052_SpikedChest.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="Spiked Chest" numGridCollisionPoints="24" shadowSize="28" stageHP="0" variant="52">
+    <entity anm2path="005.052_SpikedChest.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="Spiked Chest" numGridCollisionPoints="24" shadowSize="28" stageHP="0" variant="52" portrait="203">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/>
         <preload-snd id="22"/>
     </entity>
@@ -847,7 +850,7 @@
     <entity anm2path="006.012_MomDressingTable.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="6" name="Mom&apos;s Dressing Table" numGridCollisionPoints="24" shadowSize="33" stageHP="0" variant="12">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/>
     </entity>
-    <entity anm2path="007.001_Thick Red Laser.anm2" baseHP="0" boss="0" champion="0" collisionDamage="22" collisionMass="8" collisionRadius="16" friction="1" id="7" name="Laser (Thick Red)" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="1">
+    <entity anm2path="007.001_Thick Red Laser.anm2" baseHP="0" boss="0" champion="0" collisionDamage="11" collisionMass="8" collisionRadius="16" friction="1" id="7" name="Laser (Thick Red)" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="1">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/>
     </entity>
     <entity anm2path="007.001.003_Dark Ring.anm2" baseHP="0" boss="0" champion="0" collisionDamage="22" collisionMass="8" collisionRadius="16" friction="1" id="7" name="Laser (Thick Dark)" numGridCollisionPoints="0" shadowSize="0" stageHP="0" subtype="3" variant="1">
@@ -1011,7 +1014,7 @@
         <gibs amount="8" blood="1" bone="1" eye="0" gut="1" large="0"/>
         <preload-snd id="115"/>
     </entity>
-    <entity anm2path="019.001_The Hollow.anm2" baseHP="22" boss="1" bossID="26" champion="0" collisionDamage="1" collisionMass="50" collisionRadius="20" friction="1" gridCollision="walls" id="19" name="#THE_HOLLOW" numGridCollisionPoints="8" portrait="1" shadowSize="23" stageHP="0" variant="1">
+    <entity anm2path="019.001_The Hollow.anm2" baseHP="26" boss="1" bossID="26" champion="0" collisionDamage="1" collisionMass="50" collisionRadius="20" friction="1" gridCollision="walls" id="19" name="#THE_HOLLOW" numGridCollisionPoints="8" portrait="1" shadowSize="23" stageHP="0" variant="1">
         <bestiary anim="WalkHeadHori" transform="0,0,1"/>
         <gibs amount="6" blood="1" bone="1" eye="0" gut="0" large="0" worm="1"/>
     </entity>
@@ -1641,7 +1644,7 @@
     <entity anm2path="073.001_Teratoma Small.anm2" baseHP="8" boss="1" bossID="33" champion="0" collisionDamage="2" collisionMass="20" collisionRadius="13" friction="1" gridCollision="walls" hasFloorAlts="true" id="73" name="Teratoma Small" numGridCollisionPoints="12" portrait="43" shadowSize="23" stageHP="0" variant="1">
         <gibs amount="6" blood="1" bone="0" eye="0" gut="1" large="0" worm="1"/>
     </entity>
-    <entity anm2path="074.000_Blastocyst Big.anm2" baseHP="190" boss="1" bossID="16" champion="0" collisionDamage="2" collisionMass="30" collisionRadius="40" friction="1" id="74" name="#BLASTOCYST" numGridCollisionPoints="12" portrait="44" shadowSize="55" stageHP="0" variant="0">
+    <entity anm2path="074.000_Blastocyst Big.anm2" baseHP="300" boss="1" bossID="16" champion="0" collisionDamage="2" collisionMass="30" collisionRadius="40" friction="1" id="74" name="#BLASTOCYST" numGridCollisionPoints="12" portrait="44" shadowSize="55" stageHP="0" variant="0">
         <bestiary anim="Attack" transform="0,0,1"/>
         <gibs amount="18" blood="1" bone="0" eye="0" gut="1" large="1"/>
         <preload id="75" variant="0"/>
@@ -1818,7 +1821,7 @@
         <bestiary anim="WalkDown" transform="0,0,1"/>
         <gibs amount="5" blood="1" bone="1" eye="1" gut="1" large="0"/>
     </entity>
-    <entity anm2path="090.000_Hanger.anm2" baseHP="40" boss="0" champion="0" collisionDamage="0" collisionMass="30" collisionRadius="13" friction="1" gridCollision="walls" id="90" name="#HANGER" numGridCollisionPoints="12" portrait="56" reroll="true" shadowSize="14" stageHP="0" variant="0">
+    <entity anm2path="090.000_Hanger.anm2" baseHP="40" boss="0" champion="1" collisionDamage="0" collisionMass="30" collisionRadius="13" friction="1" gridCollision="walls" id="90" name="#HANGER" numGridCollisionPoints="12" portrait="56" reroll="true" shadowSize="14" stageHP="0" variant="0">
         <bestiary anim="Bestiary" transform="0,0,1"/>
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0"/>
     </entity>
@@ -2041,7 +2044,7 @@
         <bestiary parent="216.0"/>
         <gibs amount="4" blood="1" bone="0" eye="0" gut="0" large="0"/>
     </entity>
-    <entity anm2path="221.000_Swinger.anm2" baseHP="25" boss="0" champion="0" collisionDamage="0" collisionMass="10" collisionRadius="0" friction="1" id="216" name="Swinger Neck" numGridCollisionPoints="0" portrait="84" shadowSize="8" shutdoors="false" stageHP="0" tags="noreroll" variant="10">
+    <entity anm2path="221.000_Swinger.anm2" baseHP="38" boss="0" champion="0" collisionDamage="0" collisionMass="10" collisionRadius="0" friction="1" id="216" name="Swinger Neck" numGridCollisionPoints="0" portrait="84" shadowSize="8" shutdoors="false" stageHP="0" tags="noreroll" variant="10">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/>
     </entity>
     <entity anm2path="216.000_Dip.anm2" baseHP="3" boss="0" champion="0" collisionDamage="1" collisionMass="6" collisionRadius="9" friction="1" id="217" name="#DIP" numGridCollisionPoints="12" portrait="85" reroll="true" shadowSize="12" stageHP="1" variant="0">
@@ -3483,13 +3486,13 @@
     <entity anm2path="006.014_Isaac.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="20" friction="1" id="6" name="Isaac (secret)" numGridCollisionPoints="24" shadowSize="15" stageHP="0" variant="14">
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0"/>
     </entity>
-    <entity anm2path="006.015_Hell Game.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="6" name="Hell Game" numGridCollisionPoints="24" shadowSize="33" stageHP="0" variant="15">
+    <entity anm2path="006.015_Hell Game.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="6" name="Hell Game" numGridCollisionPoints="24" shadowSize="33" stageHP="0" variant="15" portrait="204">
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0"/>
     </entity>
     <entity anm2path="006.016_Crane Game.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="6" name="Crane Game" numGridCollisionPoints="24" shadowSize="33" stageHP="0" variant="16">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/>
     </entity>
-    <entity anm2path="006.017_Confessional.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="6" name="Confessional" numGridCollisionPoints="24" shadowSize="33" stageHP="0" variant="17">
+    <entity anm2path="006.017_Confessional.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="6" name="Confessional" numGridCollisionPoints="24" shadowSize="33" stageHP="0" variant="17" portrait="216">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/>
     </entity>
     <entity anm2path="006.018_Rotten Beggar.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="6" name="Rotten Beggar" numGridCollisionPoints="24" shadowSize="15" stageHP="0" variant="18">
@@ -3573,7 +3576,7 @@
         <bestiary anim="Hop" transform="0,0,1"/>
         <gibs amount="6" blood="1" bone="1" eye="1" gut="0" large="0" worm="1"/>
     </entity>
-    <entity anm2path="019.002_tuff twin.anm2" baseHP="35" boss="1" bossID="80" champion="0" collisionDamage="1" collisionMass="100" collisionRadius="20" friction="1" id="19" name="#TUFF_TWIN" numGridCollisionPoints="0" portrait="106" shadowSize="25" stageHP="0" tags="nodelirium" variant="2">
+    <entity anm2path="019.002_tuff twin.anm2" baseHP="35" boss="1" bossID="80" champion="0" collisionDamage="1" collisionMass="100" collisionRadius="20" friction="1" gridCollision="walls" id="19" name="#TUFF_TWIN" numGridCollisionPoints="8" portrait="106" shadowSize="25" stageHP="0" tags="nodelirium" variant="2">
         <bestiary anim="WalkHeadHori" transform="0,0,1"/>
         <gibs amount="10" blood="1" bone="0" eye="0" gut="1" large="0"/>
     </entity>
@@ -4294,11 +4297,11 @@
         <bestiary anim="Bestiary" transform="0,0,1"/>
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0"/>
     </entity>
-    <entity anm2path="881.000_needle.anm2" baseHP="10" boss="0" champion="1" collisionDamage="1" collisionMass="30" collisionRadius="14" friction="1" gridCollision="walls" id="881" name="#NEEDLE" numGridCollisionPoints="12" portrait="310" reroll="true" shadowSize="14" stageHP="2" variant="0">
+    <entity anm2path="881.000_needle.anm2" baseHP="10" boss="0" champion="0" collisionDamage="1" collisionMass="30" collisionRadius="14" friction="1" gridCollision="walls" id="881" name="#NEEDLE" numGridCollisionPoints="12" portrait="310" reroll="true" shadowSize="14" stageHP="2" variant="0">
         <bestiary anim="Bestiary" transform="0,-10,1"/>
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0"/>
     </entity>
-    <entity anm2path="881.001_pasty.anm2" baseHP="10" boss="0" champion="1" collisionDamage="1" collisionMass="30" collisionRadius="14" friction="1" gridCollision="walls" id="881" name="#PASTY" numGridCollisionPoints="12" portrait="311" reroll="true" shadowSize="14" stageHP="2" variant="1">
+    <entity anm2path="881.001_pasty.anm2" baseHP="10" boss="0" champion="0" collisionDamage="1" collisionMass="30" collisionRadius="14" friction="1" gridCollision="walls" id="881" name="#PASTY" numGridCollisionPoints="12" portrait="311" reroll="true" shadowSize="14" stageHP="2" variant="1">
         <bestiary anim="Bestiary" transform="0,-10,1"/>
         <gibs amount="6" blood="0" bone="1" eye="0" gut="0" large="0" sound_bone="1"/>
     </entity>
@@ -4690,6 +4693,9 @@
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
     <entity anm2path="1000.123_Halo (Dark Arts).anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="0" collisionRadius="0" friction="1" id="1000" name="Dark Arts Halo" numGridCollisionPoints="0" shadowSize="0" stageHP="0" subtype="8" variant="123">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/>
+    </entity>
+    <entity anm2path="1000.123_Halo (Breath of Life).anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="0" collisionRadius="0" friction="1" id="1000" name="Breath of Life Halo" numGridCollisionPoints="0" shadowSize="0" stageHP="0" subtype="9" variant="123">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/>
     </entity>
     <entity anm2path="1000.074.001_Moms Carpet.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1" collisionRadius="0" friction="1" id="1000" name="Mom&apos;s Carpet" numGridCollisionPoints="0" shadowSize="0" stageHP="0" subtype="1" variant="74">

@@ -2561,5 +2561,62 @@
 		<sample weight="1" path="famine/Famine shoot 3.wav" />
 		<sample weight="1" path="famine/Famine shoot 4.wav" />
 	</sound>
+	
+	<sound id="818">
+		<sample weight="1" path="promo/gfuel/vo/GFuel 1.wav" />
+		<sample weight="1" path="promo/gfuel/vo/GFuel 1b.wav" />
+	</sound>
+	<sound id="819">
+		<sample weight="1" path="promo/gfuel/vo/GFuel 2.wav" />
+		<sample weight="1" path="promo/gfuel/vo/GFuel 2b.wav" />
+	</sound>
+	<sound id="820">
+		<sample weight="1" path="promo/gfuel/vo/GFuel 3.wav" />
+		<sample weight="1" path="promo/gfuel/vo/GFuel 3b.wav" />
+	</sound>
+	<sound id="821">
+		<sample weight="1" path="promo/gfuel/vo/GFuel 4.wav" />
+	</sound>
+	<sound id="822">
+		<sample weight="1" path="promo/gfuel/explosion1.wav" />
+		<sample weight="1" path="promo/gfuel/explosion2.wav" />
+		<sample weight="1" path="promo/gfuel/explosion3.wav" />
+	</sound>
+	<sound id="823">
+		<sample weight="1" path="promo/gfuel/explosion_big.wav" />
+	</sound>
+	<sound id="824">
+		<sample weight="1" path="promo/gfuel/gunshot.wav" />
+	</sound>
+	<sound id="825">
+		<sample weight="1" path="promo/gfuel/gunshot_small1.wav" />
+		<sample weight="1" path="promo/gfuel/gunshot_small2.wav" />
+		<sample weight="1" path="promo/gfuel/gunshot_small3.wav" />
+	</sound>
+	<sound id="826">
+		<sample weight="1" path="promo/gfuel/gunshot_large.wav" />
+	</sound>
+	<sound id="827">
+		<sample weight="1" path="promo/gfuel/gunshot_spread.wav" />
+	</sound>
+	<sound id="828">
+		<sample weight="1" path="promo/gfuel/air_horn.wav" />
+	</sound>
+	<sound id="829">
+		<sample weight="1" path="promo/gfuel/item_explosion.wav" />
+	</sound>
+	<sound id="830">
+		<sample weight="1" path="promo/gfuel/gunshot_mini.wav" />
+	</sound>
+	<sound id="831">
+		<sample weight="1" path="promo/gfuel/ricochet1.wav" />
+		<sample weight="1" path="promo/gfuel/ricochet2.wav" />
+		<sample weight="1" path="promo/gfuel/ricochet3.wav" />
+	</sound>
+	<sound id="832">
+		<sample weight="1" path="promo/gfuel/rocketlauncher1.wav" />
+		<sample weight="1" path="promo/gfuel/rocketlauncher2.wav" />
+		<sample weight="1" path="promo/gfuel/rocketlauncher3.wav" />
+	</sound>
 <!-- REPENTANCE END -->
 </sounds>

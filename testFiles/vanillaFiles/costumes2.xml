@@ -491,7 +491,7 @@
 	<costume id="428" anm2path="428_PJs.anm2" type="passive" />
 	<costume id="429" anm2path="429_HeadOfTheKeeper.anm2" type="passive" />
 	<costume id="432" anm2path="432_glitterbombs.anm2" type="passive" hasOverlay="true" />
-	<costume id="433" anm2path="433_MyShadow.anm2" type="passive" />
+	
 	<costume id="438" anm2path="438_Binky.anm2" type="passive" />
 	
 	<costume id="443" anm2path="443_Apple.anm2" type="passive" />

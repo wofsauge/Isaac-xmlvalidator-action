@@ -102,6 +102,7 @@
 	
 	<seed id="77" name="#SEED_77"/>
 	<seed id="78" name="#SEED_78"/>
+	<seed id="79" name="#SEED_79"/>
 	
 	<!-- Changing the "implemented" flag won't make these seeds 
 	do anything, by the way. They don't have codes to unlock 

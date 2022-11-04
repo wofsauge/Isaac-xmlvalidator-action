@@ -1,6 +1,7 @@
+<?xml-model href="https://wofsauge.github.io/Isaac-XML-Validator/xsd/babies.xsd" ?>
 <babies root="gfx/Characters/Player2/">
 	<baby id="0" name="Spider Baby" skin="000_Baby_Spider.png" />
 	<!--Syntax error-->
-	<baby id="1" name="Love Baby" skin="001_Baby_Love.png" >
+	<baby id="1" name="Love Baby" skin="001_Baby_Love.pngs" />
 	<baby id="2" name="Bloat Baby" skin="002_Baby_Bloat.png" />
 </babies>

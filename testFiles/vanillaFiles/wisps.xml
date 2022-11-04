@@ -359,7 +359,7 @@
 	<!-- D12 -->
 	<wisp id="386" hp="1.5" damage="2" flameColor="flame_blue" coreColor="core_blue" coreGfx="dice.png" tearFlags2="115" procChance="0.05" />
 	<!-- Ventricle Razor -->
-	<wisp id="396" layer="-1" count="0" canShoot="false" hp="2" damage="3" flameColor="flame_blue" coreColor="core_blue" />
+	<wisp id="396" layer="-1" count="0" canShoot="false" hp="16" damage="3" flameColor="flame_blue" coreColor="core_blue" />
 	<!-- D8 -->
 	<wisp id="406" hp="2" damage="3" flameColor="flame_black" coreColor="core_black" coreGfx="dice.png" />
 	<!-- Teleport 2.0 -->

@@ -567,4 +567,7 @@
 	<baby id="557" name="Proto Baby" skin="557_Baby_Proto.png"/>
 	<baby id="558" name="Finger Baby" skin="558_Baby_Finger.png"/>
 	<baby id="559" name="Bald Baby" skin="559_Baby_Bald.png"/>
+	<baby id="560" name="Hex Baby" skin="560_Baby_Hex.png"/>
+	<baby id="561" name="Singing Baby" skin="561_Baby_Singing.png"/>
+	<baby id="562" name="Junk Baby" skin="562_Baby_Junk.png"/>
 </babies>
