@@ -80,6 +80,7 @@ def main():
             len(filteredFilename.split("/")) - 1
         ]
         if filteredFilename not in fileAllowList:
+            printWarn("Ignoring file: " + filename)
             continue
 
         print("Now analysing: " + filename)
