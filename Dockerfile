@@ -17,4 +17,4 @@ RUN pip install --target=/app lxml
 
 ENV PYTHONPATH /app
 
-CMD  [ "python", "/app/main.py"]
+CMD  [ "python", "/app/Isaac-XML-Validator/main.py"]
