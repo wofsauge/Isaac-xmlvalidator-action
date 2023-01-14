@@ -1,4 +1,4 @@
-<?xml-model href="https://wofsauge.github.io/Isaac-XML-Validator/xsd/babies.xsd" ?>
+<?xml-model href="https://wofsauge.github.io/isaac-xml-validator/xsd/babies.xsd" ?>
 <babies root="gfx/Characters/Player2/">
 	<baby id="0" name="Spider Baby" skin="000_Baby_Spider.png" />
 	<!--Syntax error-->
