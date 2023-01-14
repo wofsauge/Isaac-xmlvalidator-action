@@ -2,7 +2,7 @@
 
 Checks the validity of all .xml files inside your Binding of Isaac mod files for both syntax and usage errors.
 
-This validator uses the XSD validation files provided by this github project as a reference: [https://github.com/wofsauge/Isaac-XML-Validator](https://github.com/wofsauge/Isaac-XML-Validator)
+This validator uses the XSD validation files provided by this github project as a reference: [https://github.com/wofsauge/isaac-xml-validator](https://github.com/wofsauge/isaac-xml-validator)
 
 ## Demo
 You can see a demo usage of this action here: [https://github.com/wofsauge/xml-validator-testMod](https://github.com/wofsauge/xml-validator-testMod)

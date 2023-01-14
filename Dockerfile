@@ -7,7 +7,7 @@ WORKDIR /app
 #Install git
 RUN apk add git
 RUN cd /app
-RUN git clone https://github.com/wofsauge/Isaac-XML-Validator.git
+RUN git clone https://github.com/wofsauge/isaac-xml-validator.git
 
 RUN apk add --update --no-cache g++ gcc libxslt-dev && \
     pip --no-cache-dir install lxml
@@ -17,4 +17,4 @@ RUN pip install --target=/app lxml
 
 ENV PYTHONPATH /app
 
-CMD  [ "python", "/app/Isaac-XML-Validator/main.py"]
+CMD  [ "python", "/app/isaac-xml-validator/main.py"]
