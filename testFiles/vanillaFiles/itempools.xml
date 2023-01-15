@@ -530,7 +530,7 @@
 		<Item Id="419" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Kidney Bean-->
 		<Item Id="421" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Glowing Hour Glass-->
+		<!--Glowing Hourglass-->
 		<Item Id="422" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Obsessed Fan-->
 		<Item Id="426" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -924,7 +924,7 @@
 		<Item Id="414" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Deep Pockets-->
 		<Item Id="416" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Glowing Hour Glass-->
+		<!--Glowing Hourglass-->
 		<Item Id="422" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Sack Head-->
 		<Item Id="424" Weight="0.5" DecreaseBy="0.5" RemoveOn="0.05"/>
@@ -2428,7 +2428,7 @@
 		<Item Id="416" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Kidney Bean-->
 		<Item Id="421" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Glowing Hour Glass-->
+		<!--Glowing Hourglass-->
 		<Item Id="422" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Night Light-->
 		<Item Id="425" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -3586,7 +3586,7 @@
 		<Item Id="406" Weight="1" DecreaseBy="0.1" RemoveOn="0.1"/>
 		<!--Teleport 2.0-->
 		<Item Id="419" Weight="1" DecreaseBy="0.1" RemoveOn="0.1"/>
-		<!--Glowing Hour Glass-->
+		<!--Glowing Hourglass-->
 		<Item Id="422" Weight="1" DecreaseBy="0.1" RemoveOn="0.1"/>
 		<!--Night Light-->
 		<Item Id="425" Weight="1" DecreaseBy="0.1" RemoveOn="0.1"/>

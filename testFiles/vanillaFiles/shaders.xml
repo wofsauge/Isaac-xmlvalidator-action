@@ -1,8 +1,6 @@
 <shaders>
     <shader name="EmptyShader">
-        <parameters>
-			<param name="PlayerPos" type="vec2"/>
-        </parameters>
+        <parameters />
         <vertex><![CDATA[
             attribute vec3 Position;                                        
             attribute vec4 Color;                                           
