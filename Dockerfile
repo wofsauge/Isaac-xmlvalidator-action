@@ -14,12 +14,8 @@ RUN apk add --update --no-cache g++ gcc libxslt-dev && \
 # We are installing a dependency here directly into our app source dir
 RUN pip install --target=/app requests
 RUN pip install --target=/app isaac-xml-validator
+RUN pip install --target=/app importlib-metadata
 
 ENV PYTHONPATH /app
 
-# Github env vars
-ARG INPUT_ROOTFOLDER = ${INPUT_ROOTFOLDER}
-ARG INPUT_RECURSIVE = ${INPUT_RECURSIVE}
-ARG INPUT_EXPECTEDERRORCOUNT = ${INPUT_EXPECTEDERRORCOUNT}
-
-RUN isaac-xml-validator -r $INPUT_RECURSIVE -p $INPUT_ROOTFOLDER -r $INPUT_RECURSIVE -e $INPUT_EXPECTEDERRORCOUNT
+CMD  [ "python", "/app/isaac-xml-validator/isaac_xml_validator.py"]
