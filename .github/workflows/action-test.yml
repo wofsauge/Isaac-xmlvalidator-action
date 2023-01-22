@@ -9,6 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          submodules: recursive
       - uses: wofsauge/Isaac-xmlvalidator-action@main
         with:
           rootFolder: 'testFiles/vanillaFiles'
@@ -16,6 +18,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          submodules: recursive
       - uses: wofsauge/Isaac-xmlvalidator-action@main
         with:
           rootFolder: 'testFiles/errorTestFiles'
