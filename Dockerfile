@@ -13,7 +13,8 @@ RUN apk add --update --no-cache g++ gcc libxslt-dev && \
     pip --no-cache-dir install lxml
 # We are installing a dependency here directly into our app source dir
 RUN pip install --target=/app requests
-RUN pip install --target=/app lxml
+RUN pip install --target=/app isaac-xml-validator
+RUN pip install --target=/app importlib-metadata
 
 ENV PYTHONPATH /app
 
