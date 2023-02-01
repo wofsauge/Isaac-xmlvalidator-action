@@ -24,4 +24,4 @@ jobs:
         with:
           rootFolder: 'testFiles/errorTestFiles'
           recursive: false
-          expectedErrorCount: 5
+          expectedErrorCount: 7
