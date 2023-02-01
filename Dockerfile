@@ -1,14 +1,8 @@
 FROM python:3-alpine AS builder
-ADD . /app
 
-# main workdir
-WORKDIR /app
-
-RUN cd /app
+WORKDIR /usr/src/app
 
 # We are installing a dependency here directly into our app source dir
-RUN pip install --target=/app isaac-xml-validator
+RUN pip install --no-cache-dir isaac-xml-validator
 
-ENV PYTHONPATH /app
-
-CMD  [ "python", "-m", "isaac-xml-validator"]
+CMD  [ "python", "./isaac_xml_validator.py"]
