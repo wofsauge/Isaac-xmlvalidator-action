@@ -4,11 +4,11 @@ ADD . /app
 # main workdir
 WORKDIR /app
 
-RUN cd /app
-
+RUN pip install --upgrade pip && \
+    pip3 install -e .
 # We are installing a dependency here directly into our app source dir
-RUN pip install --target=/app isaac-xml-validator
+RUN pip install isaac-xml-validator
 
-ENV PYTHONPATH /app
+COPY . .
 
-CMD  [ "python","-m", "/bin/isaac_xml_validator.exe"]
+CMD  [ "python", "-m", "isaac-xml-validator"]
