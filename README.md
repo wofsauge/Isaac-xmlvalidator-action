@@ -21,6 +21,10 @@ Should .xml files be searched recursively in the directory. *Default* `true`.
 
 Number of validation errors that are expected to occur. good for debugging. *Default* `0`.
 
+### `ignore`
+
+Ignore specific files or folders. Seperate multiple entries by comma. The Tool will already automatically ignore the folders: node_modules, content/rooms and resources/rooms. It also ignores the files "fxlayers.xml" and "seedmenu.xml", as well as most entries provided by a .gitignore file inside the given root folder
+
 ## Example usages
 
 This example will recursively check every xml file all folders of your mod:
@@ -35,11 +39,12 @@ with:
   rootFolder: 'content'
 ```
 ----
-This example will check every xml file within the `resources` folder of your mod, and will expect 4 errors to be thrown:
+This example will check every xml file within the `resources` folder of your mod, and will expect 4 errors to be thrown. It will also ignore some test files:
 ```yaml
 uses: wofsauge/Isaac-xmlvalidator-action@main
 with:
   rootFolder: 'resources'
   recursive: false
   expectedErrorCount: 4
+  ignore: test.xml,test2.xml,testFolder/
 ```
