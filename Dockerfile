@@ -11,4 +11,4 @@ RUN pip install --target=/app isaac-xml-validator
 
 ENV PYTHONPATH /app
 
-CMD  [ "python", "./bin/isaac_xml_validator.py"]
+CMD  [ "python","-m", "/bin/isaac_xml_validator.exe"]
