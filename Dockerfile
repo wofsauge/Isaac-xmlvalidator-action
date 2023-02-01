@@ -3,9 +3,6 @@ ADD . /app
 
 # main workdir
 WORKDIR /app
-
-#Install git
-RUN apk add git
 RUN cd /app
 
 # We are installing a dependency here directly into our app source dir
