@@ -17,6 +17,10 @@ inputs:
     description: 'Number of validation errors that are expected to occur'
     required: false
     default: 0
+  ignore:
+    description: 'Files or folders that should be ignored by the tool.'
+    required: false
+    default: ''
 runs:
   using: "docker"
   image: "Dockerfile"
