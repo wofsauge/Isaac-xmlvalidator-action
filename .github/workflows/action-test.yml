@@ -13,7 +13,7 @@ jobs:
           submodules: recursive
       - uses: wofsauge/Isaac-xmlvalidator-action@main
         with:
-          rootFolder: 'testFiles/vanillaFiles'
+          rootFolder: '/testFiles/vanillaFiles'
   fail-Test:
     runs-on: ubuntu-latest
     steps:
@@ -22,6 +22,6 @@ jobs:
           submodules: recursive
       - uses: wofsauge/Isaac-xmlvalidator-action@main
         with:
-          rootFolder: 'testFiles/errorTestFiles'
+          rootFolder: '/testFiles/errorTestFiles'
           recursive: false
           expectedErrorCount: 7
