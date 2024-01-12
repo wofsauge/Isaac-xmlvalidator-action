@@ -1,4 +1,5 @@
-<entities anm2root="gfx/" version="5">
+<?xml-model href="https://wofsauge.github.io/isaac-xml-validator/xsd/entities2.xsd" ?>
+<entities anm2root="gfx/" version="5" deathanm2="gfx/death enemies.anm2">
     <!-- FAMILIARS (3) -->
   
     <!-- collisionInterval is tick rate in game frames. -->
