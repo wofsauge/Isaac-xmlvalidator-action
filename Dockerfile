@@ -1,5 +1,5 @@
-FROM python:3-alpine AS builder
+FROM python:3-alpine
 
-RUN pip install isaac-xml-validator
+RUN pip install isaac-xml-validator --upgrade
 
 CMD  [ "isaac-xml-validator"]
