@@ -21,6 +21,10 @@ inputs:
     description: 'Files or folders that should be ignored by the tool.'
     required: false
     default: ''
+  ignoreWarnings:
+    description: 'If set to true, warnings will not count towards the number of errors.'
+    required: false
+    default: false
 runs:
   using: "docker"
   image: "Dockerfile"

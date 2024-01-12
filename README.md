@@ -25,6 +25,10 @@ Number of validation errors that are expected to occur. good for debugging. *Def
 
 Ignore specific files or folders. Seperate multiple entries by comma. The Tool will already automatically ignore the folders: node_modules, content/rooms and resources/rooms. It also ignores the files "fxlayers.xml" and "seedmenu.xml", as well as most entries provided by a .gitignore file inside the given root folder
 
+### `ignoreWarnings`
+
+If set to true, this will cause warnings, such as unrecognized attributes, to not count towards the total error count.
+
 ## Example usages
 
 This example will recursively check every xml file all folders of your mod:
